@@ -6,7 +6,7 @@ packer {
     }
   }
 }
-
+# source block generates template for your AMI
 source "amazon-ebs" "ec2" {
   ami_name      = "rhel-golden-image"
   instance_type = "t3.small"
@@ -23,12 +23,12 @@ source "amazon-ebs" "ec2" {
   ssh_username = "ec2-user"
   ssh_password = "DevOps321"
 }
-
+# build block builds out your instances with specific scripts or files.
 build {
   sources = [
     "source.amazon-ebs.ec2"
   ]
-
+#provisioner block installs ansible using labauto utility
   provisioner "shell" {
     inline = [
       "sudo labauto ansible"
