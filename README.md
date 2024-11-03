@@ -17,7 +17,7 @@ verify
 ```text
 packer
 ```
-packer is hashicorp tool for creating machine images from source configuration
+
 2. Initialize packer configuration
 ```text
 packer init ec2-pkr.hcl
