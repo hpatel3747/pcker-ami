@@ -1,5 +1,23 @@
-## pcker-ami 
-1. packer is hashicorp tool for creating machine images from source configuration
+## pcker-ami : packer is hashicorp tool for creating machine images from source configuration
+1. install packer
+
+#### install yum config-manager to manage your  repos
+```text
+sudo yum install -y yum-utils
+```
+add repos
+```text
+sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo
+```
+install
+```text
+sudo yum -y install packer
+verify
+
+```text
+packer
+```
+packer is hashicorp tool for creating machine images from source configuration
 2. Initialize packer configuration
 ```text
 packer init ec2-pkr.hcl
