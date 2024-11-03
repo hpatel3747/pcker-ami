@@ -12,8 +12,8 @@ sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/RHEL/hashi
 install
 ```text
 sudo yum -y install packer
+```
 verify
-
 ```text
 packer
 ```
