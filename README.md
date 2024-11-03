@@ -22,7 +22,7 @@ packer is hashicorp tool for creating machine images from source configuration
 ```text
 packer init ec2-pkr.hcl
 ```
-3. run the packer build command providing your iimage template file
+3. run the packer build command providing your image template file
 ```text
 packer build ec2-pkr.hcl
 ```
